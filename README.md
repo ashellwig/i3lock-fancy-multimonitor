@@ -1,4 +1,8 @@
 # i3lock-fancy-multimonitor
+
+## Notice
+This is forked simply because I wanted to maintain my configuration and add it as a submodule to my yadm repo. 
+
 The idea for this project was shamelessly copied from [meskarune](https://github.com/meskarune)'s [i3lock-fancy](https://github.com/meskarune/i3lock-fancy).
 
 It uses [scrot](http://freecode.com/projects/scrot) to take a screenshot of the desktop, then [ImageMagick](http://www.imagemagick.org/) blurs the image and adds a lock icon and text.
@@ -11,14 +15,13 @@ The lock icon is different from the original project, with a transparent black c
 Make sure you have all the dependencies:
 
 ```
-sudo apt-get install scrot imagemagick i3lock
+sudo pacman -S scrot imagemagick i3lock
 ```
 
 Copy the `lock` script along with the images to some place on your system (e.g.: the i3 folder) and give it execution permission:
 
 ```
-git clone https://github.com/guimeira/i3lock-fancy-multimonitor.git
-cp -r i3lock-fancy-multimonitor ~/.i3
+git clone https://github.com/ashellwig/i3lock-fancy-multimonitor.git ~/.config/i3/i3lock-fancy-multimonitor
 chmod +x ~/.i3/i3lock-fancy-multimonitor/lock
 ```
 
